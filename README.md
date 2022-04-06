@@ -1,9 +1,9 @@
-# js-kata-starter
+# sliding-average
 
-Starter project for kata (Node, TypeScript, Jest)
+Compute the sliding overage of numbers provided as an array, given a window:
 
-## Getting started
-
-- **Fork**, then clone the repository
-- Install dependencies
-- Start developing (`npm test`)
+```typescript
+test("Array of 5 numbers, window of 3", function () {
+  expect(slidingAverage([0, 1, 2, 3, 4], 3)).toEqual([0, 0.5, 1, 2, 3]);
+});
+```
